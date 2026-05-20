@@ -16,6 +16,18 @@
         "src/static/*"
       ],
       "jinja": true
+    },
+    {
+      "name": "Run pytest tests",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "pytest",
+      "args": [
+        "tests",
+        "-q"
+      ],
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal"
     }
   ]
 }
